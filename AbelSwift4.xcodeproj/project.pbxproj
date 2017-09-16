@@ -12,6 +12,11 @@
 		BC1C9C7E1F6CDDC8000F062C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1C9C7C1F6CDDC8000F062C /* Main.storyboard */; };
 		BC1C9C801F6CDDC8000F062C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1C9C7F1F6CDDC8000F062C /* Assets.xcassets */; };
 		BC1C9C831F6CDDC8000F062C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1C9C811F6CDDC8000F062C /* LaunchScreen.storyboard */; };
+		BC1C9C9F1F6CEA83000F062C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C9C9E1F6CEA83000F062C /* HomeViewController.swift */; };
+		BC1C9CA11F6CEA99000F062C /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C9CA01F6CEA99000F062C /* DoorViewController.swift */; };
+		BC1C9CA31F6CEAAB000F062C /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C9CA21F6CEAAB000F062C /* ShopViewController.swift */; };
+		BC1C9CA51F6CEC9C000F062C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C9CA41F6CEC9C000F062C /* MineViewController.swift */; };
+		BC1C9CA71F6CECA6000F062C /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C9CA61F6CECA6000F062C /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,22 @@
 		BC1C9C7F1F6CDDC8000F062C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC1C9C821F6CDDC8000F062C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC1C9C841F6CDDC8000F062C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1C9C921F6CE0FD000F062C /* icon_tabbar_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_more@2x.png"; sourceTree = "<group>"; };
+		BC1C9C931F6CE0FD000F062C /* icon_tabbar_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_mine_selected@2x.png"; sourceTree = "<group>"; };
+		BC1C9C941F6CE0FD000F062C /* icon_tabbar_door_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_door_selected@2x.png"; sourceTree = "<group>"; };
+		BC1C9C951F6CE0FE000F062C /* icon_tabbar_shop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_shop@2x.png"; sourceTree = "<group>"; };
+		BC1C9C961F6CE0FE000F062C /* icon_tabbar_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_home@2x.png"; sourceTree = "<group>"; };
+		BC1C9C971F6CE0FE000F062C /* icon_tabbar_door@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_door@2x.png"; sourceTree = "<group>"; };
+		BC1C9C981F6CE0FE000F062C /* icon_tabbar_more_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_more_selected@2x.png"; sourceTree = "<group>"; };
+		BC1C9C991F6CE0FE000F062C /* icon_tabbar_shop_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_shop_selected@2x.png"; sourceTree = "<group>"; };
+		BC1C9C9A1F6CE0FE000F062C /* icon_tabbar_home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_home_selected@2x.png"; sourceTree = "<group>"; };
+		BC1C9C9B1F6CE0FE000F062C /* icon_tabbar_mine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tabbar_mine@2x.png"; sourceTree = "<group>"; };
+		BC1C9C9D1F6CE2C0000F062C /* start.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = start.jpg; sourceTree = "<group>"; };
+		BC1C9C9E1F6CEA83000F062C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BC1C9CA01F6CEA99000F062C /* DoorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
+		BC1C9CA21F6CEAAB000F062C /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		BC1C9CA41F6CEC9C000F062C /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		BC1C9CA61F6CECA6000F062C /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,11 @@
 		BC1C9C771F6CDDC8000F062C /* AbelSwift4 */ = {
 			isa = PBXGroup;
 			children = (
+				BC1C9C8E1F6CDEA5000F062C /* Controller */,
+				BC1C9C8D1F6CDE99000F062C /* Views */,
+				BC1C9C8C1F6CDE93000F062C /* Model */,
+				BC1C9C8B1F6CDE85000F062C /* Resource */,
+				BC1C9C8A1F6CDE62000F062C /* DB */,
 				BC1C9C781F6CDDC8000F062C /* AppDelegate.swift */,
 				BC1C9C7A1F6CDDC8000F062C /* ViewController.swift */,
 				BC1C9C7C1F6CDDC8000F062C /* Main.storyboard */,
@@ -62,6 +88,73 @@
 				BC1C9C841F6CDDC8000F062C /* Info.plist */,
 			);
 			path = AbelSwift4;
+			sourceTree = "<group>";
+		};
+		BC1C9C8A1F6CDE62000F062C /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BC1C9C8B1F6CDE85000F062C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C9C9C1F6CE2B6000F062C /* imgs */,
+				BC1C9C911F6CE0E8000F062C /* tabbarImg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC1C9C8C1F6CDE93000F062C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC1C9C8D1F6CDE99000F062C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC1C9C8E1F6CDEA5000F062C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C9C9E1F6CEA83000F062C /* HomeViewController.swift */,
+				BC1C9CA01F6CEA99000F062C /* DoorViewController.swift */,
+				BC1C9CA21F6CEAAB000F062C /* ShopViewController.swift */,
+				BC1C9CA41F6CEC9C000F062C /* MineViewController.swift */,
+				BC1C9CA61F6CECA6000F062C /* MoreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC1C9C911F6CE0E8000F062C /* tabbarImg */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C9C941F6CE0FD000F062C /* icon_tabbar_door_selected@2x.png */,
+				BC1C9C971F6CE0FE000F062C /* icon_tabbar_door@2x.png */,
+				BC1C9C9A1F6CE0FE000F062C /* icon_tabbar_home_selected@2x.png */,
+				BC1C9C961F6CE0FE000F062C /* icon_tabbar_home@2x.png */,
+				BC1C9C931F6CE0FD000F062C /* icon_tabbar_mine_selected@2x.png */,
+				BC1C9C9B1F6CE0FE000F062C /* icon_tabbar_mine@2x.png */,
+				BC1C9C981F6CE0FE000F062C /* icon_tabbar_more_selected@2x.png */,
+				BC1C9C921F6CE0FD000F062C /* icon_tabbar_more@2x.png */,
+				BC1C9C991F6CE0FE000F062C /* icon_tabbar_shop_selected@2x.png */,
+				BC1C9C951F6CE0FE000F062C /* icon_tabbar_shop@2x.png */,
+			);
+			path = tabbarImg;
+			sourceTree = "<group>";
+		};
+		BC1C9C9C1F6CE2B6000F062C /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				BC1C9C9D1F6CE2C0000F062C /* start.jpg */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1C9CA71F6CECA6000F062C /* MoreViewController.swift in Sources */,
 				BC1C9C7B1F6CDDC8000F062C /* ViewController.swift in Sources */,
 				BC1C9C791F6CDDC8000F062C /* AppDelegate.swift in Sources */,
+				BC1C9CA31F6CEAAB000F062C /* ShopViewController.swift in Sources */,
+				BC1C9CA11F6CEA99000F062C /* DoorViewController.swift in Sources */,
+				BC1C9C9F1F6CEA83000F062C /* HomeViewController.swift in Sources */,
+				BC1C9CA51F6CEC9C000F062C /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asbelsu.AbelSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.asbelsu.AbelSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

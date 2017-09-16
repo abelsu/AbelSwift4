@@ -15,6 +15,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 3.0); //设置页面启动时间
+        //application.setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone/启动页面图片全屏
+        //application.setStatusBarHidden(false,with:UIStatusBarAnimation.none);
+        
+        // 启动页面全屏后状态栏还原
+        var prefersStatusBarHidden: Bool {
+            return false
+        }
+        //使用下一句时状态栏文字变白色，首先在Info.plist中设置UIViewControllerBasedStatusBarAppearance 为NO
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        //0.
+        self.window = UIWindow(frame:UIScreen.main.bounds);
+        self.window!.backgroundColor = UIColor.white
+        
+        //1.
+        let VC1 = HomeViewController()
+        let nav1 = UINavigationController(rootViewController: VC1)
+        let VC2 = DoorViewController()
+        let nav2 = UINavigationController(rootViewController: VC2)
+        let VC3 = ShopViewController()
+        let nav3 = UINavigationController(rootViewController: VC3)
+        let VC4 = MineViewController()
+        let nav4 = UINavigationController(rootViewController: VC4)
+        let VC5 = MoreViewController()
+        let nav5 = UINavigationController(rootViewController: VC5)
+        
+        //2.
+        let navArrs = [nav1,nav2,nav3,nav4,nav5]
+        //3.
+        //4.
+        //5.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // Override point for customization after application launch.
         return true
     }
