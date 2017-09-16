@@ -16,13 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 3.0); //设置页面启动时间
-        //application.setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone/启动页面图片全屏
-        //application.setStatusBarHidden(false,with:UIStatusBarAnimation.none);
+        UIApplication.shared.setStatusBarHidden(false, with: .none)//启动页面图片全屏,需要在Info.plist中将UIStatusBarHidden，值设为YES
         
-        // 启动页面全屏后状态栏还原
-        var prefersStatusBarHidden: Bool {
-            return false
-        }
+      
         //使用下一句时状态栏文字变白色，首先在Info.plist中设置UIViewControllerBasedStatusBarAppearance 为NO
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         
@@ -45,20 +41,55 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //2.
         let navArrs = [nav1,nav2,nav3,nav4,nav5]
         //3.
+        let tabBarController = UITabBarController()
         //4.
+        tabBarController.viewControllers = navArrs
         //5.
+        self.window!.rootViewController = tabBarController
+        
+        //6.
+        let image1 = UIImage(named: "icon_tabbar_home")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage1 = UIImage(named: "icon_tabbar_home_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let item1 = UITabBarItem(title: "首页", image: image1, selectedImage: selectImage1)
+        //item1.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
+        nav1.tabBarItem = item1
+        
+        let image2 = UIImage(named: "icon_tabbar_door")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage2 = UIImage(named: "icon_tabbar_door_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let item2 = UITabBarItem(title: "门户", image: image2, selectedImage: selectImage2)
+        //item2.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
+        nav2.tabBarItem = item2
+        
+        let image3 = UIImage(named: "icon_tabbar_shop")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage3 = UIImage(named: "icon_tabbar_shop_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let item3 = UITabBarItem(title: "商家", image: image3, selectedImage: selectImage3)
+        //item3.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
+        nav3.tabBarItem = item3
+        
+        let image4 = UIImage(named: "icon_tabbar_mine")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage4 = UIImage(named: "icon_tabbar_mine_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let item4 = UITabBarItem(title: "我的", image: image4, selectedImage: selectImage4)
+        //item4.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
+        nav4.tabBarItem = item4
+        
+        let image5 = UIImage(named: "icon_tabbar_more")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage5 = UIImage(named: "icon_tabbar_more_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let item5 = UITabBarItem(title: "更多", image: image5, selectedImage: selectImage5)
+        //item5.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
+        nav5.tabBarItem = item5
+        
+        //改变选中的UITabBarItem字体颜色
+        let attributes =  [NSAttributedStringKey.foregroundColor: UIColor(red: 0, green: 0.72, blue: 0.69, alpha: 1)]
+        UITabBarItem.appearance().setTitleTextAttributes(attributes, for: UIControlState.selected)
+        //未选中的字体颜色设置
+        //UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.redColor()], forState: UIControlState.Normal)
+        
+        //设置导航栏字体颜色
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        //7.
+        self.window!.makeKeyAndVisible()//设置为主窗口并显示出来*/
         
         
         
