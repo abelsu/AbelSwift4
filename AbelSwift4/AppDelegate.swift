@@ -9,13 +9,13 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Thread.sleep(forTimeInterval: 3.0); //设置页面启动时间
+        Thread.sleep(forTimeInterval: 1.0); //设置页面启动时间
         UIApplication.shared.setStatusBarHidden(false, with: .none)//启动页面图片全屏,需要在Info.plist中将UIStatusBarHidden，值设为YES
         
       
@@ -48,32 +48,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = tabBarController
         
         //6.
-        let image1 = UIImage(named: "icon_tabbar_home")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let selectImage1 = UIImage(named: "icon_tabbar_home_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        VC1.title = "首页"
+        let image1 = UIImage(named: "home")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage1 = UIImage(named: "home_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let item1 = UITabBarItem(title: "首页", image: image1, selectedImage: selectImage1)
         //item1.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
         nav1.tabBarItem = item1
         
-        let image2 = UIImage(named: "icon_tabbar_door")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let selectImage2 = UIImage(named: "icon_tabbar_door_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let item2 = UITabBarItem(title: "门户", image: image2, selectedImage: selectImage2)
+        VC2.title = "图片"
+        let image2 = UIImage(named: "camera")?.withRenderingMode(.alwaysOriginal)
+        let selectImage2 = UIImage(named: "camera_selected")?.withRenderingMode(.alwaysOriginal)
+        let item2 = UITabBarItem(title: "图片", image: image2, selectedImage: selectImage2)
         //item2.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
         nav2.tabBarItem = item2
         
-        let image3 = UIImage(named: "icon_tabbar_shop")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let selectImage3 = UIImage(named: "icon_tabbar_shop_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let item3 = UITabBarItem(title: "商家", image: image3, selectedImage: selectImage3)
+        let image3 = UIImage(named: "explore")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage3 = UIImage(named: "explore_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let item3 = UITabBarItem(title: "浏览", image: image3, selectedImage: selectImage3)
         //item3.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
         nav3.tabBarItem = item3
         
-        let image4 = UIImage(named: "icon_tabbar_mine")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let selectImage4 = UIImage(named: "icon_tabbar_mine_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let image4 = UIImage(named: "me")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage4 = UIImage(named: "me_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let item4 = UITabBarItem(title: "我的", image: image4, selectedImage: selectImage4)
         //item4.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
         nav4.tabBarItem = item4
         
-        let image5 = UIImage(named: "icon_tabbar_more")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        let selectImage5 = UIImage(named: "icon_tabbar_more_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let image5 = UIImage(named: "more")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let selectImage5 = UIImage(named: "more_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let item5 = UITabBarItem(title: "更多", image: image5, selectedImage: selectImage5)
         //item5.imageInsets = UIEdgeInsetsMake(6,0,-6,0)
         nav5.tabBarItem = item5

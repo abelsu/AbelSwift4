@@ -12,7 +12,7 @@ class ShopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "商家"
+        self.title = "浏览"
         self.view.backgroundColor = UIColor.white
         self.navigationController!.navigationBar.barTintColor = UIColor(red:0.13, green:0.77, blue:0.71, alpha:1.00) //设置导航栏背景颜色
 
